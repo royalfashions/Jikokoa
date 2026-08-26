@@ -1,84 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jiko Koa | Eco-Friendly Charcoal Stoves</title>
-  <meta name="description" content="Jiko Koa high-efficiency charcoal cookstoves. Save charcoal, save money and cook smarter. Order on WhatsApp.">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;background:#f5f7f2;color:#182018}
-    a{text-decoration:none}
-    .top{background:#14532d;color:#fff;text-align:center;padding:9px;font-size:14px}
-    header{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;box-shadow:0 2px 10px #0001;position:sticky;top:0;z-index:10}
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand img{width:145px;height:62px;object-fit:cover;border-radius:8px}
-    .phone{font-weight:700;color:#14532d}
-    .hero{width:100%;overflow:hidden;background:#fff}
-    .hero img{display:block;width:100%;height:auto}
-    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:22px}
-    .btn{padding:13px 22px;border-radius:30px;font-weight:700;color:#fff;display:inline-block}
-    .whatsapp{background:#25D366}
-    .call{background:#14532d}
-    .section{max-width:1100px;margin:auto;padding:35px 20px}
-    .section h2{text-align:center;color:#14532d;margin-bottom:22px;font-size:30px}
-    .card{background:#fff;border-radius:18px;padding:20px;box-shadow:0 5px 20px #00000012}
-    .card img{width:100%;border-radius:14px;display:block}
-    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-    .feature{text-align:center;background:#fff;padding:20px;border-radius:15px;box-shadow:0 4px 15px #00000010}
-    .feature b{display:block;color:#14532d;margin-bottom:7px}
-    footer{background:#123b24;color:#fff;text-align:center;padding:28px 15px;margin-top:20px}
-    .float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 5px 20px #0004;z-index:20}
-    @media(max-width:700px){
-      header{padding:9px 4%}.brand img{width:120px;height:52px}.phone{font-size:13px}
-      .features{grid-template-columns:1fr 1fr}.section h2{font-size:25px}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiko Koa | Quality Modern Charcoal Stoves</title>
+<meta name="description" content="Shop Jiko Koa modern charcoal stoves. Prices from KSh 3,500 to KSh 8,500. Free delivery within Nairobi.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f6f8f4;color:#17251a;line-height:1.5}
+a{text-decoration:none}
+.container{width:min(1150px,92%);margin:auto}
+.top{background:#123c22;color:#fff;text-align:center;padding:8px;font-size:14px}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;color:#123c22}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:#203326;font-weight:700;font-size:14px}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:800;border:0;cursor:pointer}
+.green{background:#159447;color:white}
+.yellow{background:#f2b72b;color:#152116}
+.hero{background:linear-gradient(90deg,#0b321de8,#0b321d88),url("images/IMG-20260826-WA0009.jpg") center/cover;min-height:520px;color:white;display:flex;align-items:center}
+.hero-content{max-width:650px;padding:70px 0}
+.badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff55;padding:8px 14px;border-radius:30px;margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,70px);line-height:1.03;margin-bottom:18px}
+.hero p{font-size:19px;margin-bottom:25px;color:#eef6ef}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.trust{background:white;padding:20px 0;box-shadow:0 4px 15px #0000000b}
+.trustgrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.trustgrid div{padding:8px;border-right:1px solid #eee;font-weight:700}
+section{padding:70px 0}
+.heading{text-align:center;max-width:680px;margin:0 auto 38px}
+.heading span{color:#159447;font-size:13px;font-weight:900;text-transform:uppercase}
+.heading h2{font-size:38px;margin:8px 0}
+.heading p{color:#68736b}
+.products{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e5e9e4;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px #0000000a}
+.pic{height:230px;background:#f4f5f2;display:flex;align-items:center;justify-content:center}
+.pic img{width:100%;height:100%;object-fit:contain}
+.cardbody{padding:18px}
+.tag{display:inline-block;background:#e4f5e9;color:#13753a;padding:5px 8px;border-radius:5px;font-size:11px;font-weight:900}
+.card h3{margin:10px 0 5px}
+.card p{font-size:14px;color:#68736b;min-height:42px}
+.price{font-size:23px;font-weight:900;color:#159447;margin:12px 0}
+.qty{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.qty button{width:30px;height:30px;border:1px solid #ddd;background:white;border-radius:5px}
+.qty input{width:45px;text-align:center;height:30px;border:1px solid #ddd}
+.card .btn{width:100%;text-align:center}
+.cartbar{position:fixed;right:18px;bottom:18px;z-index:20;background:#123c22;color:#fff;padding:14px 18px;border-radius:30px;box-shadow:0 5px 20px #0004;font-weight:900}
+.benefits{background:#eef5ed}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.benefit{background:white;padding:28px;border-radius:14px}
+.benefit b{font-size:19px;display:block;margin:10px 0}
+.benefit p{color:#69736c}
+.payment{background:#fff}
+.paybox{background:#f3f7f2;border-radius:18px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.airtel{background:#d71920;color:#fff;border-radius:12px;padding:25px}
+.airtel strong{font-size:30px;display:block;margin-top:8px}
+.steps{counter-reset:step;list-style:none}
+.steps li{margin:12px 0;padding-left:38px;position:relative}
+.steps li:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;background:#159447;color:white;width:26px;height:26px;border-radius:50%;text-align:center;font-weight:900}
+.delivery{background:#0e3b20;color:#fff}
+.deliverybox{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.deliverycard{padding:30px;border:1px solid #ffffff25;border-radius:15px;background:#ffffff0c}
+.deliverycard h3{font-size:25px;margin-bottom:10px}
+footer{background:#102718;color:#cbd7cd;padding:45px 0}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h3{color:#fff;margin-bottom:12px}
+footer a{color:#cbd7cd;display:block;margin:7px 0}
+.copy{text-align:center;border-top:1px solid #ffffff18;margin-top:30px;padding-top:18px;font-size:13px}
+@media(max-width:850px){
+nav{display:none}.trustgrid,.grid,.bgrid,.paybox,.deliverybox,.foot{grid-template-columns:1fr 1fr}
+.grid{grid-template-columns:repeat(2,1fr)}
+.hero{min-height:580px}
+}
+@media(max-width:560px){
+.trustgrid,.grid,.bgrid,.paybox,.deliverybox,.foot{grid-template-columns:1fr}
+.hero-content{padding:55px 0}
+h1{font-size:47px}
+section{padding:55px 0}
+.pic{height:260px}
+}
+</style>
 </head>
 <body>
-  <div class="top">🌱 Eco-friendly cooking • Fuel-saving • Free Home Delivery</div>
 
-  <header>
-    <div class="brand">
-      <img src="logo.jpg" alt="Jikokoa logo">
-    </div>
-    <a class="phone" href="tel:+25431519162">📞 +254 315 19162</a>
-  </header>
+<div class="top">🌿 Quality modern charcoal stoves • Free delivery within Nairobi • Order via WhatsApp</div>
 
-  <main>
-    <section class="hero">
-      <img src="hero-banner.png" alt="Jikokoa eco-friendly charcoal stove hero banner">
-    </section>
+<header>
+<div class="container nav">
+<a class="logo" href="#">🔥 JIKO KOA</a>
+<nav>
+<a href="#products">Products</a><a href="#benefits">Benefits</a><a href="#gallery">Gallery</a><a href="#payment">Payment</a><a href="#delivery">Delivery</a><a href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20want%20to%20order%20a%20stove.">WhatsApp</a>
+</nav>
+</div>
+</header>
 
-    <div class="actions">
-      <a class="btn whatsapp" href="https://wa.me/25431519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20Jikokoa%20stove." target="_blank">💬 Order on WhatsApp</a>
-      <a class="btn call" href="tel:+25431519162">📞 Call +254 315 19162</a>
-    </div>
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="badge">🔥 QUALITY MODERN CHARCOAL STOVES</div>
+<h1>Cook smarter.<br>Save charcoal.</h1>
+<p>Choose from our range of practical charcoal stoves. Prices from KSh 3,500 to KSh 8,500, with free delivery within Nairobi.</p>
+<div class="actions">
+<a class="btn yellow" href="#products">Shop Products →</a>
+<a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20would%20like%20to%20order%20a%20stove.">💬 Order on WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section">
-      <h2>Jikokoa — Cook Smarter</h2>
-      <div class="card">
-        <img src="jiko-koa-product.jpg" alt="Jikokoa charcoal cooking stoves">
-      </div>
-    </section>
+<div class="trust"><div class="container trustgrid">
+<div>🔥 Efficient Cooking</div><div>💰 Fuel Saving</div><div>🚚 Nairobi Delivery Free</div><div>🇰🇪 Kenya-wide Delivery</div>
+</div></div>
 
-    <section class="section">
-      <h2>Why Choose Jikokoa?</h2>
-      <div class="features">
-        <div class="feature">🌿<b>Eco-Friendly</b>Lower emissions and cleaner cooking.</div>
-        <div class="feature">🔥<b>Fuel Saving</b>Designed for efficient charcoal use.</div>
-        <div class="feature">🍳<b>High Efficiency</b>Cook efficiently with less wasted heat.</div>
-        <div class="feature">🛡️<b>Durable & Safe</b>Strong construction for everyday use.</div>
-      </div>
-    </section>
-  </main>
+<section id="products" class="products">
+<div class="container">
+<div class="heading"><span>Our Products</span><h2>Choose Your Jiko Koa</h2><p>These are the actual product pictures you provided.</p></div>
+<div class="grid">
 
-  <footer>
-    <strong>JIKO KOA</strong><br>
-    Quality Modern Charcoal Stoves<br>
-    📞 +254 315 19162 • 💬 WhatsApp orders available
-  </footer>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0006.jpg" alt="Jiko Koa small charcoal stove"></div><div class="cardbody"><span class="tag">POPULAR</span><h3>Jiko Koa Small</h3><p>Compact option for smaller households and light cooking.</p><div class="price">KSh 3,500</div><div class="qty"><button onclick="changeQty(this,-1)">−</button><input value="1" readonly><button onclick="changeQty(this,1)">+</button></div><button class="btn green" onclick="order('Jiko Koa Small',3500,this)">Add to Cart</button></div></div>
 
-  <a class="float" href="https://wa.me/25431519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20Jikokoa%20stove." target="_blank" aria-label="Chat with Jiko Koa on WhatsApp">💬</a>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0010.jpg" alt="Jiko Koa stainless charcoal stove"></div><div class="cardbody"><span class="tag">VALUE</span><h3>Jiko Koa Medium</h3><p>Durable stove suitable for everyday household cooking.</p><div class="price">KSh 5,500</div><div class="qty"><button onclick="changeQty(this,-1)">−</button><input value="1" readonly><button onclick="changeQty(this,1)">+</button></div><button class="btn green" onclick="order('Jiko Koa Medium',5500,this)">Add to Cart</button></div></div>
+
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0001.jpg" alt="Jiko Koa red charcoal stove"></div><div class="cardbody"><span class="tag">POPULAR</span><h3>Jiko Koa Large</h3><p>Larger cooking option for families and heavier cooking.</p><div class="price">KSh 7,000</div><div class="qty"><button onclick="changeQty(this,-1)">−</button><input value="1" readonly><button onclick="changeQty(this,1)">+</button></div><button class="btn green" onclick="order('Jiko Koa Large',7000,this)">Add to Cart</button></div></div>
+
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0004.jpg" alt="Jiko Koa blue charcoal stove"></div><div class="cardbody"><span class="tag">PREMIUM</span><h3>Jiko Koa Premium</h3><p>Premium option with a strong practical design.</p><div class="price">KSh 8,500</div><div class="qty"><button onclick="changeQty(this,-1)">−</button><input value="1" readonly><button onclick="changeQty(this,1)">+</button></div><button class="btn green" onclick="order('Jiko Koa Premium',8500,this)">Add to Cart</button></div></div>
+
+</div>
+</div>
+</section>
+
+
+<section id="gallery" class="products">
+<div class="container">
+<div class="heading">
+<span>Our Collection</span>
+<h2>See More Jiko Koa Stoves</h2>
+<p>Real product pictures supplied by Jiko Koa.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0001.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0002.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0003.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0004.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0006.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0008.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0009.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0010.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0014.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+<div class="card"><div class="pic"><img src="images/IMG-20260826-WA0015.jpg" alt="Jiko Koa product photo"></div><div class="cardbody"><span class="tag">JIKO KOA</span><h3>Available Stove</h3><p>Contact us for size, colour, availability and price.</p><a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20am%20interested%20in%20this%20stove%20from%20your%20website.">Ask on WhatsApp</a></div></div>
+</div>
+</div>
+</section>
+
+<section id="benefits" class="benefits">
+<div class="container">
+<div class="heading"><span>Why Jiko Koa</span><h2>Made for everyday cooking</h2></div>
+<div class="bgrid">
+<div class="benefit">🔥<b>Efficient Heat</b><p>Designed to make practical use of charcoal heat during cooking.</p></div>
+<div class="benefit">💰<b>Save Fuel</b><p>Efficient cooking can help reduce unnecessary charcoal wastage.</p></div>
+<div class="benefit">🛠️<b>Practical Design</b><p>Sturdy, useful designs suited to everyday cooking needs.</p></div>
+</div>
+</div>
+</section>
+
+<section id="payment" class="payment">
+<div class="container">
+<div class="heading"><span>Payment</span><h2>Pay with Airtel Money</h2><p>After selecting your product, contact us on WhatsApp with your payment confirmation.</p></div>
+<div class="paybox">
+<div class="airtel"><div>AIRTEL MONEY</div><strong>0731 519 162</strong><p>Use this number for Airtel Money payment.</p></div>
+<div><h3>How to pay</h3><ol class="steps"><li>Open Airtel Money on your phone.</li><li>Select Send Money.</li><li>Enter <b>0731 519 162</b>.</li><li>Enter the amount for your order.</li><li>Send the payment and keep the confirmation.</li><li>Send the confirmation to us on WhatsApp.</li></ol></div>
+</div>
+</div>
+</section>
+
+<section id="delivery" class="delivery">
+<div class="container">
+<div class="heading"><span style="color:#f2b72b">Delivery</span><h2>We deliver your Jiko Koa</h2><p style="color:#d9e7dc">Simple delivery arrangements across Nairobi and beyond.</p></div>
+<div class="deliverybox">
+<div class="deliverycard"><h3>📍 Within Nairobi</h3><p>🎉 <b>FREE DELIVERY</b></p><p>Share your exact location when ordering.</p></div>
+<div class="deliverycard"><h3>🚚 Outside Nairobi</h3><p><b>From KSh 300</b></p><p>Delivery cost increases depending on the destination.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="heading"><span>Order Now</span><h2>Ready to buy?</h2><p>Add your preferred stove or contact us directly. We will confirm availability, delivery and payment.</p><br>
+<a class="btn green" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20want%20to%20order%20a%20stove.">💬 WhatsApp: 0731 519 162</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container foot">
+<div><h3>🔥 JIKO KOA</h3><p>Quality modern charcoal stoves for efficient everyday cooking.</p></div>
+<div><h3>Quick Links</h3><a href="#products">Products</a><a href="#benefits">Benefits</a><a href="#gallery">Gallery</a><a href="#payment">Payment</a><a href="#delivery">Delivery</a></div>
+<div><h3>Contact</h3><a href="tel:+254731519162">📞 0731 519 162</a><a href="https://wa.me/254731519162">💬 WhatsApp</a><p>📍 Nairobi, Kenya</p></div>
+</div>
+<div class="container copy">© 2026 Jiko Koa. All rights reserved.</div>
+</footer>
+
+<a class="cartbar" id="cart" href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa%2C%20I%20would%20like%20to%20place%20an%20order.">🛒 Cart: <span id="count">0</span></a>
+
+<script>
+let cart=[];
+function changeQty(btn,delta){
+ const input=btn.parentElement.querySelector('input');
+ let n=parseInt(input.value)+delta;
+ if(n<1)n=1;
+ input.value=n;
+}
+function order(name,price,btn){
+ const qty=parseInt(btn.parentElement.querySelector('input').value);
+ cart.push({name,price,qty});
+ document.getElementById('count').textContent=cart.reduce((s,x)=>s+x.qty,0);
+ let text="Hello Jiko Koa, I want to order:%0A";
+ cart.forEach(x=>text+=`${x.name} x${x.qty} = KSh ${x.price*x.qty}%0A`);
+ text+="%0ADelivery: Nairobi free / outside Nairobi from KSh 300 depending on location.%0APlease confirm my order.";
+ document.getElementById('cart').href="https://wa.me/254731519162?text="+text;
+ alert(name+" added to cart.");
+}
+</script>
 </body>
 </html>
